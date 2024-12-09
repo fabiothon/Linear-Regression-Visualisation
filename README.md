@@ -1,4 +1,4 @@
-# Linear Regression Visualization
+# Linear Regression Visualisation
 ## Description
 
 
