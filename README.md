@@ -6,6 +6,7 @@ The visualisation is divided into three categories: Overall Odds Ratio, Men Odds
 
 **Please note**: This code is for educational purposes only. Partly synthetic data is used.
 
+## Application Overview
 ![picture_1](https://github.com/user-attachments/assets/746984be-44f0-4dcf-b5e9-e88a8188eb92)
 ![picture_2](https://github.com/user-attachments/assets/98aa7f31-0f9d-40a2-85bd-e159253aba0d)
 
