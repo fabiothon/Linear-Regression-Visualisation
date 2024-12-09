@@ -2,12 +2,10 @@
 ## Description
 
 This Python code creates a linear regression plot based on a study conducted by Powell et al. (2013). The plot visualises the correlation between smoking intensity and lung cancer risk in men and women, as well as overall odds ratios (OR). 
-
 The dataset includes odds ratio values (OR) along with their confidence intervals for various smoking intensities: Never Smoked, Light/Trivial (1-9 cigarettes/day), Moderate (10-19 cigarettes/day), and Heavy/Very Heavy (>20 cigarettes/day).
-
 The visualisation is divided into three categories: Overall Odds Ratio, Men Odds Ratio, and Women Odds Ratio. Error bars in the plot represent the confidence intervals for each odds ratio.
 
-**Please note**: This code is for educational purposes only.
+**Please note**: This code is for educational purposes only. Partly synthetic data is used.
 
 ## Installation
 

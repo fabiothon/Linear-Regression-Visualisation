@@ -6,15 +6,14 @@
 # This Python code creates a linear regression plot based on a study conducted
 # by Powell et al. (2013). It visualises the correlation between smoking intensity 
 # and lung cancer risk in men and women, as well as overall odds ratios (OR).
-#
 # The dataset contains odds ratio values (OR), along with their confidence intervals,
 # for different smoking intensities: Never Smoked, Light/Trivial (1-9 cigarettes/d), 
 # Moderate (10-19 cigarettes/d), and Heavy/Very Heavy (>20 cigarettes/d).
-#
 # The plot is faceted into three categories: Overall Odds Ratio, Men Odds Ratio,
 # and Women Odds Ratio. Error bars represent the confidence intervals for each OR.
 #
-# PLEASE NOTE: THIS CODE IS FOR EDUCATIONAL PURPOSES ONLY!
+# PLEASE NOTE: THIS CODE IS FOR EDUCATIONAL PURPOSES ONLY! Partly synthetic data
+# is used.
 # Additional information is available in the README file.
 
 # =============================================================================
@@ -28,6 +27,8 @@ import plotly.express as px
 # =============================================================================
 # Load the data from the Excel file
 df = pd.read_excel("/Users/fabiothon/Desktop/Code/Smoking/data.xlsx")
+synthetic_df = pd.read_excel("/Users/fabiothon/Desktop/Code/Smoking/data.xlsx", 
+                             sheet_name = "Synthetic data")
 
 # =============================================================================
 # DATA TRANSFORMATION
@@ -52,3 +53,15 @@ fig_overall = px.scatter(
 )
 fig_overall.update_xaxes(dtick=1)
 fig_overall.show()
+
+fig_synthetic = px.scatter(
+    synthetic_df, 
+    x = "number", 
+    y = "or", 
+    trendline = "ols",
+    color = "category",
+    labels = {"number": "Smoking Intensity", "or": "Odds Ratio (OR)"},
+    title = "Synthetic data: Linear Regression of Smoking Intensity vs. Odds Ratio (OR)"
+)
+fig_synthetic.update_xaxes(dtick=1)
+fig_synthetic.show()
