@@ -1,5 +1,7 @@
 # Linear Regression Visualisation
 ## Description
+![picture_1](https://github.com/user-attachments/assets/746984be-44f0-4dcf-b5e9-e88a8188eb92)
+![picture_2](https://github.com/user-attachments/assets/98aa7f31-0f9d-40a2-85bd-e159253aba0d)
 
 This Python code creates a linear regression plot based on a study conducted by Powell et al. (2013). The plot visualises the correlation between smoking intensity and lung cancer risk in men and women, as well as overall odds ratios (OR). 
 The dataset includes odds ratio values (OR) along with their confidence intervals for various smoking intensities: Never Smoked, Light/Trivial (1-9 cigarettes/day), Moderate (10-19 cigarettes/day), and Heavy/Very Heavy (>20 cigarettes/day).
